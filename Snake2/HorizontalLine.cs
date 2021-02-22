@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Snake2
 {
-    class HorizontalLine : Figura
+    class HorizontalLine : Figure
     {
         public HorizontalLine(int xLeft, int xRight, int y, char sym)
         {
