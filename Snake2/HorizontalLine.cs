@@ -6,20 +6,26 @@ using System.Threading.Tasks;
 
 namespace Snake2
 {
-    class HorizontalLine : Figure
-    {
-        public HorizontalLine(int xLeft, int xRight, int y, char sym)
+    
+        class HorizontalLIne : Figure// наследование
         {
-            pList = new List<Point>();
-            for (int x = xLeft; x <= xRight; x++)
+
+            public HorizontalLIne(int xLeft, int xReight, int y, char sym)
             {
-                Point p = new Point(x, y, sym);
-                pList.Add(p);
+                pList = new List<Point>();
+                for (int x = xLeft; x <= xReight; x++)
+                {
+                    Point p = new Point(x, y, sym, ConsoleColor.White);
+                    pList.Add(p);
+                }
+
             }
+
+
         }
     }
-}
-    
+
+
 
 
 
